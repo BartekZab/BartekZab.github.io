@@ -1,39 +1,129 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Moja Strona</title>
-    <meta name="description" content="Bartlomiej Zabek CV">
-    <link rel="stylesheet" href="style.css">
+    <title>My CV</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #0077cc;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .profile {
+            text-align: center;
+        }
+
+        .profile img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 4px solid #0077cc;
+        }
+
+        .profile h2 {
+            margin: 10px 0 0;
+        }
+
+        .section {
+            margin-top: 20px;
+        }
+
+        .section h3 {
+            border-bottom: 2px solid #0077cc;
+            padding-bottom: 5px;
+            color: #0077cc;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin: 10px 0;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <a href="index.html"><img src="../Zdjecie do legitymacji.jpg" alt="Logo"></a>
-        <nav>
-            <ul>
-                <li><a href="index.html">Strona główna</a></li>
-                <li><a href="o-mnie.html">O mnie</a></li>
-                <li><a href="kontakt.html">Kontakt</a></li>
-            </ul>
-        </nav>
+        <h1>My CV</h1>
     </header>
-    
-    <main>
-        <section>
-            <h1>Strona główna</h1>
-            <p>Witaj na stronie gdzie krotko opisze swoje CV!</p>
-            <img src="obraz.jpg" alt="Opis obrazu">
-            <p>Jestem absolwentem Technikum elektryczno-mechanicznego o profilu Teleinformatyk. 
-                W tym roku rozpoczynam dalszą edukację na uczelni: 
-                Akademia Górniczo-Hutnicza w Krakowie o profilu Cyberbezpieczeństwo. 
-                Jestem osobą bardzo dobrze radzącą sobie w zespole. Szybko się uczę i jestem bardzo pracowity. 
-                Dotychczas pracowałem w firmie moich rodziców jednak chciałbym spróbować wykorzystać umiejętności w branży IT. </p>
-        </section>
-    </main>
 
-    <footer>
-        <p>&copy; 2023 Moja Strona</p>
-    </footer>
+    <div class="container">
+        <div class="profile">
+            <img src="Zdjecie do legitymacji.jpg" alt="Your Photo">
+            <h2>Bartlomiej Zabek</h2>
+            <p>Bartlomiej Zabek - student Cyberbezpieczenstwa</p>
+        </div>
+
+        <div class="section">
+            <h3>About Me</h3>
+            <p>Jestem absolwentem Technikum elektryczno-mechanicznego o profilu
+Teleinformatyk. W tym roku rozpoczynam dalszą edukację na uczelni:
+Akademia Górniczo-Hutnicza w Krakowie o profilu Cyberbezpieczeństwo.
+Jestem osobą bardzo dobrze radzącą sobie w zespole. Szybko się uczę i
+jestem bardzo pracowity. Dotychczas pracowałem w firmie moich
+rodziców jednak chciałbym spróbować wykorzystać umiejętności w
+branży IT.</p>
+        </div>
+
+        <div class="section">
+            <h3>Experience</h3>
+            <ul>
+                <li><strong>Practice 1</strong> - NESTOR (Nowy Sacz)</li>
+                <li><strong>Practice 2</strong> - NOEL (Nowy Sacz)</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3>Education</h3>
+            <ul>
+                <li><strong>High School</strong> - Zespol Szkol Elekrtyczno-Mechanicznych w Nowym Saczu</li>
+                <li><strong>University</strong> - AGH University of Krakow (currently)</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3>Skills</h3>
+            <ul>
+                <li>Znajomość takich programów jak:
+Da Vinci Resolve, Gimp, AutoCAD</li>
+                <li>Znajomość pakietu MS Office</li>
+                <li>Znajomość języków obcych
+(j.angielski)</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3>Contact</h3>
+            <p>Email: bzabek@student.agh.edu.pl</p>
+            <p>Phone: +48 789 385 233</p>
+        </div>
+    </div>
 </body>
 </html>
